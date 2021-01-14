@@ -71,7 +71,6 @@ class FlopCo():
                            for k,v in self.params.items()})
 
         del self.model
-        self.__delattr__('model')
         torch.cuda.empty_cache()
         
         
